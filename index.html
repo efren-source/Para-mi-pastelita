@@ -1,0 +1,217 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <LINK rel=StyleSheet href="css/main.css" type="text/css" media=screen>
+    <title>love you </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+</head>
+
+<body>
+   
+    <style>
+
+        *, *::after,*::before{
+            margin: 0;  
+            padding: 0;
+            -webkit-box-sezing: border-box;
+            -moz-box-sezing: border-box;
+            box-sezing: border-box;
+        }
+        #barracarga{
+            background-color:rgb(255, 255, 255);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            -webkit-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+            z-index:1000;
+        }
+    
+        #cargando{
+            border: 15px solid #ccc;
+            border-top-color: rgb(151, 150, 150);
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right: 0px;
+            margin:auto;
+            -webkit-animation: rotate  2s linear infinite;
+            animation: rotate  2s linear infinite;
+        }
+        @-webkit-keyframes rotate  {
+            from {-webkit-transform: rotate(0deg);}
+            to {-webkit-transform: rotate(360deg);}
+        }
+    
+    </style>
+    
+    <div id="barracarga"> 
+        
+        <div id="cargando"></div>
+    
+    </div>
+    
+    <script>
+       window.onload = function(){
+          
+            var contenedor = document.getElementById('barracarga');
+            
+            contenedor.style.visibility = 'hidden';
+            
+            contenedor.style.opacity = '0'
+       }
+    </script>
+    
+
+    <div id="container">
+      
+        
+        <div class="saludo">
+            <center>
+                <audio id="demo" src="canon.mp3"></audio>
+                <script>
+                    document.getElementById('demo').play();
+                    document.getElementById('demo').pause()
+                </script>
+                <div>
+                </div>
+                <h1 class="entrada animacion-1"> Hoy es un dia peculiar... </h1>
+                <h2 class="inicio-h1 animacion-2">Hay algo que te quiero mostrar mi niña preciosa</h2>
+                <h2 class="inicio-h1 animacion-3"> es hora de comenzar</h2>
+                <h2 class="inicio-h1 animacion-4">¿estas lista para esto?</h2>     
+                <p>
+                    <span class="animacion-5">3..</span>
+                    <span class="animacion-6">2..</span>
+                    <span class="animacion-7">1..</span>
+                </p>
+                <a onclick="cambiar()" id="play"><img src="img/corazon.png" class="animacion-8 img " ></a> 
+
+                </script>              
+            </center>
+        </div>
+    </div>
+    <div id="container2">
+        <div class="saludo2">
+
+            <center>
+                <h1 class="title">Nuesta historia de amor ;3 <br>  <br></h1>
+            </center>
+            <h2  class=""> <span class="typed "></span> </h2>
+        </div>
+       
+    </div>
+    <div id="container3">
+        <div class="saludo2">
+
+            <center>
+                <h1 class="title" style="font-size: 3rem;"> atte: tu paatelito <br>  <br></h1>
+            </center>
+            <h2  class="">  
+                FELIZ SAN VALETIN MI PRECIOSA CHRYSTAL <br>
+                <TE AMO CON TODO MI CORAZON <3  </a>
+                <te deseo un lindo dia mi amor </a>
+                <MMMMMUUAAAAAK   </a> <br>
+                 <br>
+                
+            </h2>
+        </div>
+       
+    </div>
+    
+    <script>
+        cont1= document.getElementById('container');
+        cont2= document.getElementById('container2');
+        cont3= document.getElementById('container3');
+        cont2.style.display= 'none';
+        cont3.style.display= 'none';
+        
+        function cambiar(){
+            document.getElementById('demo').play();
+            cont1.style.display= 'none';
+            cont2.style.display= 'block';
+            frase1='Todo comenzó el día 02 de septiembre, era una noche tranquila una mas en la que te esperaba... ';
+            frase2 = frase1 + 'Sin saberlo, ese día marcaría el inicio de algo hermoso, ';
+            frase3 = frase2 + 'Llevábamos ya varios días hablando cada noche, ';
+            frase4 = frase3 + 'Nos desvelábamos sin darnos cuenta del tiempo <br>';
+            frase5 = frase4 + 'Las conversaciones se volvían nuestro lugar favorito, ';
+            frase6 = frase5 + 'Poco a poco empezaste a formar parte de mis pensamientos diarios, ';
+            frase7 = frase6 + 'Cada mensaje tuyo iluminaba mis dias y mis noches.  <br> ';
+            frase8 = frase7 + 'y entonces paso... ';
+            frase9 = frase8 + 'Aquella noche te sentí más cercana que nunca ';
+            frase10 = frase9 + 'Sentí que ya no eras solo alguien con quien hablaba. <br>';
+            frase11 = frase10 + 'Eras alguien que quería en mi vida de verdad. <br>';
+            frase12 = frase11+ 'Mi corazón entendió lo que mi mente aún intentaba procesar.  <br>';
+            frase13 = frase12 + 'Supe que era el momento. <br>';
+            frase14 = frase13 + 'Reuní valor y te propuse tener una relación, ';
+            frase15 = frase14 + 'Fue un instante lleno de nervios y esperanza. <br>';
+            frase2_1 = 'pero me da mucho gusto haberlo hecho por que, <br>';
+            frase2_2 = frase2_1 + 'Desde ese día comencé a llamarte “mi amor”. <br>';
+            frase2_3 = frase2_2 + 'Y esa palabra empezó a tener tu nombre <br>';
+            frase2_4 = frase2_3 + 'Me alegra profundamente haberte confesado mis sentimientos. <br>';
+            frase2_5 = frase2_4 + '¡Porque guardar lo que sentía ya no era una opción! <br>';
+            frase2_6 = frase2_5 + 'Quería ser parte de tu vida. <br>';
+            frase2_7 = frase2_6 + 'Y deseaba que tú fueras parte de la mía. <br>';
+            frase2_8 = frase2_7 + 'Soñaba con seguir planeando actividades juntos. ';
+            frase2_9 = frase2_8 + 'Con construir recuerdos que algún día contemos sonriendo. ';
+            frase2_10 = frase2_9 + 'Con hacer nuevos amigos a tu lado. ';
+            frase2_11 = frase2_10 + 'Con reírnos de cosas que solo nosotros entendamos. ';
+            frase2_12 = frase2_11 + 'Con apoyarnos mutuamente.  ';
+            frase3_1= 'Con acompañarnos cuando más nos necesitemos, ';
+            frase3_2= frase3_1 + 'Con sostenernos en los días difíciles, <br>';
+            frase3_3= frase3_2 + 'Y celebrar juntos los días felices, ';
+            frase3_4= frase3_3 + 'Porque contigo todo tiene más sentido, ' ;
+            frase3_5= frase3_4 + 'Porque contigo las noches ya no son solo desvelos. <br> ';
+            frase3_6= frase3_5 + 'Son momentos que guardo en el corazón. <br><br><br><br>';
+            frase3_7= frase3_6 + '<a onclick="creditos()">click (patelita :3)</a>';
+            const typed = new Typed('.typed', {
+                strings: [frase1, frase2,frase3, frase4, frase5,frase6,frase7,frase8,frase9,
+                        frase10,frase11,frase12,frase13,frase14,frase15,
+                        frase2_1,frase2_2,frase2_3,frase2_4,frase2_5,frase2_6,frase2_7,frase2_8,
+                        frase2_9,frase2_10,frase2_11,frase2_12,
+                        frase3_1, frase3_2, frase3_3, frase3_4, frase3_5, frase3_6, frase3_7
+                    ],
+                typeSpeed: 60,
+                startDelay:2000,
+                cursorChar: '<3',
+            });
+        }
+        function creditos(){
+            cont2.style.display= 'none';
+            cont3.style.display= 'block';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+
+    </script>
+
+
+
+
+
+    <!-- <script src="js/animaciones-2.js"></script> -->
+    <script src="js/main.js"> </script>
+    <script src="js/animaciones-1.js"> </script>
+    
+    <!-- <footer>
+       
+        <div>
+            Iconos diseñados por:
+            <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
+            from:
+            <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+        </div>
+    </footer> -->
+</body>
+</html>
+<!-- 
+
+
